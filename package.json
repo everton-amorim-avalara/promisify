@@ -1,0 +1,23 @@
+{
+  "name": "promisify",
+  "version": "1.0.0",
+  "description": "Another callback to promise converter.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wkrueger/promisify.git"
+  },
+  "author": "Willian Krueger <wkrueger128@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wkrueger/promisify/issues"
+  },
+  "homepage": "https://github.com/wkrueger/promisify#readme",
+  "devDependencies": {
+    "@types/node": "^7.0.0",
+    "typescript": "^2.1.5"
+  }
+}
