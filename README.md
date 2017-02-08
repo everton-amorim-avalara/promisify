@@ -19,6 +19,8 @@ A `Promise` object in the global scope.
 
 ## promisifyOop( instance, fnString, ...args )
 
+Mostly the same as calling `promisify( obj.fn.bind(obj), ... )`.
+
 ```javascript
 promisifyOop( pg, 'execute', 'SELECT * FROM table WHERE id = $1', [23] )
   .then( ([rows]) => {
