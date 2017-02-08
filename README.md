@@ -17,6 +17,8 @@ A `Promise` object in the global scope.
  })
  ```
 
+Care, responses always come wrapped in arrays.
+
 ## promisifyOop( instance, fnString, ...args )
 
 Mostly the same as calling `promisify( obj.fn.bind(obj), ... )`.
@@ -25,5 +27,5 @@ Mostly the same as calling `promisify( obj.fn.bind(obj), ... )`.
 promisifyOop( pg, 'execute', 'SELECT * FROM table WHERE id = $1', [23] )
   .then( ([rows]) => {
     console.log(rows)
-  })
-```
+  })
+``
