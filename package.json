@@ -4,7 +4,8 @@
   "description": "Another callback to promise converter.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "watch": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,6 @@
   "devDependencies": {
     "@types/node": "^7.0.0",
     "typescript": "^2.1.5"
-  }
+  },
+  "typings" : "./declaration/index.d.ts"
 }

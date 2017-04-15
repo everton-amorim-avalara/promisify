@@ -6,14 +6,22 @@
  * })
  * ```
  */
-export function promisify( fn, ...args ) {
+export const promisify : PromisifyT = ( fn, ...args ) => {
     return new Promise( (resolve, reject) => {
         fn( ...args , (err, ...result) => {
             if (err) return reject(err)
             resolve(result)
         })
-    })
+    }) as any
 }
+
+
+function request( url:string, opts:{a:string}, cb:(err:Error, resp:{b:string}, body:string) => any ) {  }
+
+var a = promisify( request, 'www', {a:'2'} )
+a.then( ([a,b]) => {
+    
+} )
 
 
 /**
