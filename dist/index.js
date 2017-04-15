@@ -25,11 +25,6 @@ exports.promisify = function (fn) {
             }]));
     });
 };
-function request(url, opts, cb) { }
-var a = exports.promisify(request, 'www', { a: '2' });
-a.then(function (_a) {
-    var a = _a[0], b = _a[1];
-});
 /**
  * When the method is part of an object created with `new X()`.
  */

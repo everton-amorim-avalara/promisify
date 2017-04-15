@@ -16,14 +16,6 @@ export const promisify : PromisifyT = ( fn, ...args ) => {
 }
 
 
-function request( url:string, opts:{a:string}, cb:(err:Error, resp:{b:string}, body:string) => any ) {  }
-
-var a = promisify( request, 'www', {a:'2'} )
-a.then( ([a,b]) => {
-    
-} )
-
-
 /**
  * When the method is part of an object created with `new X()`.
  */
